@@ -117,7 +117,7 @@ export function ensureThreeLibLoaded() {
       return;
     }
     const script = document.createElement("script");
-    script.src = "three.min.js";
+    script.src = "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js";
     script.async = true;
     script.dataset.zperiodThree = "1";
     script.onload = () => resolve(window.THREE);
