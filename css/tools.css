@@ -75,11 +75,16 @@ html.dark-theme .chemistry-tools-page::before {
   max-height: 65vh;
 }
 
-.chem-tools-grid > .chem-tool-card:last-child:nth-child(3) {
+.chem-tools-grid > .chem-tool-card:last-child:nth-child(3),
+.chem-tools-grid > .chem-tool-card:last-child:nth-child(5) {
   grid-column: 1 / -1;
   width: 100%;
   max-width: calc(50% - 16px);
   justify-self: center;
+}
+
+.tutoring-card:hover {
+  box-shadow: 0 16px 32px -8px rgba(37, 99, 235, 0.2), 0 0 0 2px #2563eb !important;
 }
 
 @media (max-width: 768px) {
@@ -88,7 +93,8 @@ html.dark-theme .chemistry-tools-page::before {
     max-height: none;
   }
 
-  .chem-tools-grid > .chem-tool-card:last-child:nth-child(3) {
+  .chem-tools-grid > .chem-tool-card:last-child:nth-child(3),
+  .chem-tools-grid > .chem-tool-card:last-child:nth-child(5) {
     grid-column: auto;
     max-width: none;
   }
